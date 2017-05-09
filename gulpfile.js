@@ -110,9 +110,6 @@ gulp.task('watch', function() {
     watch(paths.src + '/**/*.html', function() {
         gulp.start('html');
     });
-    watch(paths.src + paths.scss + '/**/*.scss', function() {
-        gulp.start('scss');
-    });
     watch(paths.src + paths.less + '/**/*.less', function() {
         gulp.start('less');
     });
@@ -127,7 +124,7 @@ gulp.task('watch', function() {
     });
 });
 
-gulp.task('dev', ['scss', 'less', 'html', 'js', 'js:vendor', 'images'], function() {
+gulp.task('dev', ['less', 'html', 'js', 'js:vendor', 'images'], function() {
     browserSync.init({
         server: paths.dest
     });
@@ -135,6 +132,6 @@ gulp.task('dev', ['scss', 'less', 'html', 'js', 'js:vendor', 'images'], function
 });
 
 gulp.task('build', function() {
-    runSequence('clean', ['scss', 'less', 'html', 'js', 'js:vendor', 'images'],
+    runSequence('clean', ['less', 'html', 'js', 'js:vendor', 'images'],
       'zip');
 });
