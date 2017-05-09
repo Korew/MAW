@@ -33,6 +33,10 @@
 			
 			&:not(:last-child) {
 				margin-right: 40px;
+
+				@media screen and (max-width: (@xl - 1)) {
+					margin-right: 25px;
+				}
 			}
 
 			&-link {
@@ -76,5 +80,15 @@
 }
 
 .breadcrumbs {
+	display: flex;
+	list-style-type: none;
+
+	&-item {
+
+		&-link {
+
+			
+		}
+	}
 
 }
