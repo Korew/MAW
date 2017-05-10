@@ -1,0 +1,56 @@
+.hook-section(){
+	&-carusel{
+		&-content{
+			outline: none;
+			min-height: 500px;
+			img{
+				position: absolute;
+				z-index:-1;
+				left:8%;
+			}
+			.jumbotron{
+				position: absolute;
+				z-index:1;
+				left: 30%;
+				top:40%;
+				text-align: right;
+					.title{
+						font-family: "Gotham Pro";
+						font-size: 48px;
+						font-weight: 700;
+						text-transform: uppercase;
+						color:@black;
+						margin: 0;
+							span{
+								color:@white;
+							}
+					}
+					.desc{
+						margin: 0;
+						color: #424242;
+						font-family: "Arial Narrow";
+						font-size: 24px;
+						font-weight: 400;
+						text-transform: uppercase;
+					}
+					.button{
+						text-align: right;
+						margin-top:40px;
+					}
+
+				}
+			}
+		ul.slick-dots{
+			position: absolute;
+			z-index: 1;
+			top: 40%;
+			li{
+				list-style-type: none;
+				
+			}
+		}
+	}
+};
+.section-carusel-bg{
+	background-color:#edecea;
+}
