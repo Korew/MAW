@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "markupus": "djvang/markupus"
+    "markupus": "djvang/markupus",
+    "jquery": "^3.2.1"
   }
 }
