@@ -24,4 +24,10 @@ $(function(){
 	  // autoplay: true,
 	  // autoplaySpeed:3000,
 	});
+
+	$('.navbar-toggler').click(function(e){
+	e.preventDefault();
+
+	$('.navbar-nav').toggleClass('active');
+	});
 })
